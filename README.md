@@ -9,6 +9,7 @@ If you have the module installed, anybody can speak to you in topics. If the oth
 ##### Installing ZNC:
 ---
 - using znc version 1.7.0
+  + if upgrading znc, the config should be upgraded automatically on znc startup (but keep a backup anyway)
 - follow the guides at: https://wiki.znc.in/Installation
 - when compiling, you must enable python: https://wiki.znc.in/Modpython#Compiling
 
@@ -19,6 +20,7 @@ If you have the module installed, anybody can speak to you in topics. If the oth
 - load it in irc:
   + '/query &ast;status loadmod modpython'
   + '/query &ast;status loadmod privatemessagetopics' (can load either --type=user or --type=network)
+- don't forget to saveconfig to keep the module loaded next restart.
 
 ##### Talking in topics:
 ---
